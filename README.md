@@ -17,6 +17,10 @@ npm i --save-dev @types/node
 ### 起動とか
 
 ```bash
+# build
+$ tsc
+
+# server start
 $ node ./src/server.js
 
 # open
