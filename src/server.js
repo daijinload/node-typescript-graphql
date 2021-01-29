@@ -4,13 +4,13 @@ var { graphqlHTTP } = require('express-graphql');
 var { buildSchema } = require('graphql');
 var schema = buildSchema(`
   type Query {
-    hello2(id: String): String
+    hello2(name: String): String
   }
 `);
 var root = {
     hello2: (hello) => {
         console.log(hello);
-        return 'world id=' + hello.id;
+        return 'world name=' + hello.name;
     }
 };
 var app = express();
