@@ -2,9 +2,7 @@ var express = require('express');
 var { graphqlHTTP } = require('express-graphql');
 var { buildSchema } = require('graphql');
 
-//hello: String,
-// hello: () => 'Hello world!',
-
+// オブジェクトで渡されるので、特にinterfaceを使う必要は無いんだけど、せっかくなのでTSCっぽく使ってみた。
 interface Ihello {
   name: string
 }
