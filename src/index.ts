@@ -14,7 +14,4 @@ class UserAccount {
 }
 
 const user: User = new UserAccount("Murphy", 1);
-
-// let helloWorld = "Hello World";
-
 console.log(user.name);
